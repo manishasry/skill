@@ -1,18 +1,11 @@
-# Bhendi
-X-platform app for students
-
-## Features
-1. Events - community driven/public
-2. Timetables - Based on faculty, Allow creation/modification by the admin
-3. Bulletin Board - Faculty
-
-4. User auth - role based
+# SkillArena
+Skill development platform for students
 
 ## Installation
 
 Take a git clone of this repository by typing this into an empty directory :
 
-`git clone https://github.com/DrBATU/bhendi.git`
+`git clone https://github.com/manishasry/skill.git`
 
 Do this only for the first time you take the copy of the project.
 
