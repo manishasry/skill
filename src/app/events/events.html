@@ -1,0 +1,112 @@
+<md-tabs md-stretch-tabs class="md-primary" md-selected="data.selectedIndex">
+          <md-tab id="tab1" aria-controls="tab1-content">
+            Topics
+          </md-tab>
+          <md-tab id="tab2" aria-controls="tab2-content">
+            Practice
+          </md-tab>
+          <md-tab id="tab3" aria-controls="tab3-content">
+            Quizzy
+          </md-tab>
+</md-tabs>
+
+      <md-content flex md-scroll-y>
+        <ui-view layout="column" layout-fill layout-padding>
+          <div class="inset" hide-sm></div>
+            <ng-switch on="data.selectedIndex" class="tabpanel-container">
+
+              <div role="tabpanel"
+                   id="tab1-content"
+                   aria-labelledby="tab1"
+                   ng-switch-when="0"
+                   md-swipe-left="next()"
+                   md-swipe-right="previous()"
+                   layout="row" layout-align="center center">
+                  <md-card flex-gt-sm="90" flex-gt-md="80">
+                    <md-card-content>
+                      <h2>List of Topics</h2>
+                      <md-card flex-gt-sm="90" flex-gt-md="80">
+                             <md-button  class="md-primary">percentage</md-button>
+                      </md-card>
+                      </md-card-content>
+                  </md-card>
+              </div>
+
+
+              <div role="tabpanel"
+                   id="tab2-content"
+                   aria-labelledby="tab2"
+                   ng-switch-when="1"
+                   md-swipe-left="next()"
+                   md-swipe-right="previous()"
+                   layout="row" layout-align="center center">
+                  <md-card flex-gt-sm="90" flex-gt-md="80">
+                    <md-card-content>
+                      <h2>Name of  Selected Topic</h2>
+                      <md-card>
+                            <md-card-title>
+                              <md-card-title-text>
+                                <p style="margin-bottom: 0;">1.Which fruit you like</p>
+                                <md-radio-group ng-model="data.group1">
+                                  <md-radio-button value="Apple" class="md-primary">Apple</md-radio-button>
+                                  <md-radio-button value="Banana"> Banana </md-radio-button>
+                                  <md-radio-button value="Mango">Mango</md-radio-button>
+                                </md-radio-group>
+                              </md-card-title-text>
+                            </md-card-title>
+                              <md-button class="md-raised md-primary"><p>Selected Value: <span class="radioValue">{{ data.group1 }}</span> </p></md-button>
+                      </md-card>
+
+                      <md-card>
+                            <md-card-title>
+                              <md-card-title-text>
+                                <p style="margin-bottom: 0;">1.Which fruit you like</p>
+                                <md-radio-group ng-model="data.group1">
+                                  <md-radio-button value="Apple" class="md-primary">Apple</md-radio-button>
+                                  <md-radio-button value="Banana"> Banana </md-radio-button>
+                                  <md-radio-button value="Mango">Mango</md-radio-button>
+                                </md-radio-group>
+                              </md-card-title-text>
+                            </md-card-title>
+                              <md-button class="md-raised md-primary"><p>Selected Value: <span class="radioValue">{{ data.group1 }}</span> </p></md-button>
+                      </md-card>
+
+                      </md-card-content>
+                  </md-card>
+              </div>
+
+
+
+    <div role="tabpanel"
+         id="tab3-content"
+         aria-labelledby="tab3"
+         ng-switch-when="2"
+         md-swipe-left="next()"
+         md-swipe-right="previous()"
+         layout="row" layout-align="center center">
+        <md-card flex-gt-sm="90" flex-gt-md="80">
+          <md-card-content>
+            <h2>Quiz of the day</h2>
+            <md-card flex-gt-sm="90" flex-gt-md="80">
+                  <md-card-title>
+                    <md-card-title-text>
+                      <p style="margin-bottom: 0;">1.Which fruit you like</p>
+                      <md-radio-group ng-model="data.group1">
+                        <md-radio-button value="Apple" class="md-primary">Apple</md-radio-button>
+                        <md-radio-button value="Banana"> Banana </md-radio-button>
+                        <md-radio-button value="Mango">Mango</md-radio-button>
+                      </md-radio-group>
+                    </md-card-title-text>
+                  </md-card-title>
+                    <md-button class="md-raised md-primary"><p>Selected Value: <span class="radioValue">{{ data.group1 }}</span> </p></md-button>
+            </md-card>
+
+            </md-card-content>
+        </md-card>
+    </div>
+
+  </ng-switch>
+
+  </ui-view>
+  </md-content>
+  </div>

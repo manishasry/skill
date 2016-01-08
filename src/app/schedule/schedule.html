@@ -1,0 +1,36 @@
+<md-content flex id="content" >
+
+    <md-tabs md-selected="selectedIndex" md-border-bottom="" md-autoselect="">
+      <md-tab ng-repeat="tab in tabs" ng-disabled="tab.disabled" label="{{tab.title}}">
+          <md-card >
+		  	<md-card-content>
+		  		<md-subheader>Events</md-subheader>
+		  		<md-list layout="column">
+				<md-list-item class="md-3-line" ng-repeat="item in tab.scheduleevent"  ng-click="showInfo($event)">
+				<md-button class="md-fab md-mini" >{{item.date}}</md-button>
+				{{item.name}}<br/>
+				<md-divider></md-divider>
+				<br/>
+				</md-list-item>
+
+				<md-subheader>Exam Time</md-subheader>
+				<md-list-item   class="md-3-line" ng-repeat="item in tab.examschedule" >
+				<md-button   class="md-fab md-mini" ng-init="desc=false" ng-click="desc=!desc">{{item.date}}</md-button>
+				{{item.name}}
+				<md-card ng-show="desc" >
+				<md-card-content ng-repeat="exam in item.subs">
+				{{exam}}
+				</md-card-content>
+				</md-card>
+				<md-divider ></md-divider>
+				<br/>
+				</md-list-item>
+				</md-list>
+		  	</md-card-content>
+		  </md-card>
+      </md-tab>
+    </md-tabs>
+  
+</md-content>
+
+ 

@@ -1,0 +1,22 @@
+<md-dialog aria-label="Schedule"> 
+    <form > 
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Schedule</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="hide()">
+                    <md-icon md-svg-src="assests/svg/" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content class="md-padding" ng-repeat="item in scheduleinfo"> 
+            <div layout="column">
+            <h3> Event Name: {{item.name}}</h3>
+            <p> Guest Name: {{item.guest}}</p>
+            <p> Date : {{item.date}}</p>
+            <p> Fees: {{item.fees}}</p>
+            <p> Description: {{item.desc}}</p>
+            </div>
+        </md-dialog-content>
+    </form>
+</md-dialog>

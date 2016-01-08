@@ -1,0 +1,56 @@
+{
+    "attributes": {
+        "layout-fill": {},
+        "ng-click": {},
+        "hide-gt-sm": {},
+        "style": {},
+        "ui-view": {
+            "context": "div"
+        },
+        "layout": {
+            "context": "div"
+        },
+        "ng-class": {},
+        "class": {},
+        "type": {},
+        "hide-gt-md": {},
+        "flex": {},
+        "aria-label": {}
+    },
+    "elements": {
+        "md-icon": {
+            "attributes": {
+                "md-svg-src": {},
+                "md-svg-icon": {},
+                "class": {}
+            }
+        },
+        "md-dialog": {
+            "attributes": {
+                "aria-label": {}
+            }
+        },
+        "md-content": {
+            "attributes": {
+                "id": {},
+                "class": {},
+                "flex": {}
+            }
+        },
+        "md-button": {},
+        "md-list": {},
+        "md-toolbar": {
+            "attributes": {
+                "ng-click": {},
+                "class": {}
+            }
+        },
+        "md-sidenav": {
+            "attributes": {
+                "md-is-locked-open": {},
+                "class": {},
+                "md-component-id": {}
+            }
+        }
+    }
+}
