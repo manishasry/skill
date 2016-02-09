@@ -28,27 +28,17 @@ angular.module('bhendi')
                         {
                             link: 'home.events',
                             title: 'Events'
-
                         },
                         {
-                            link: 'home.schedule',
-                            title: 'Time Table'
-
-                        },
-                        {
-                            link: 'home.board',
-                            title: 'Bulletin Board'
-                        },
-                        {
+                            link: 'home.rankings',
                             title: 'Rankings'
                         }
                     ];
                     $scope.menu2 =
                             [
                                 {
-
+                                    link: 'home.settings',
                                     title: 'Settings',
-                                    icon: 'settings'
 
                                 },
                                 {

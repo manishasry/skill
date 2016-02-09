@@ -15,7 +15,7 @@ If you wish to update your copy of this project, then give the following command
 
 Enter your github credentials when asked and wait for the git console to sync all the code.
 
-**NOTE : For first time initialisation of the project, you will also have to run the following commands. Please dont run these commands if you already have ran them in the past.
+**NOTE : For first time initialization of the project, you will also have to run the following commands. Please don't run these commands if you already have ran them in the past.
 
 1. `npm install`
 2. `bower install`
