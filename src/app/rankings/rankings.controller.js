@@ -7,29 +7,40 @@ angular.module('bhendi')
       {
         who: 'Nivedita',
         roll: '20120602',
-        marks: "34/35"
+        marks: 34/35
       },
       {
         who: 'Priyanka',
         roll: '20120617',
-        marks: "32/34"
+        marks: 32/34
       },
       {
         who: 'Rajhans',
         roll: '20120620',
-        marks: "36/38"
+        marks: 36/38
       },
       {
         who: 'Chaitanya',
         roll: '20120621',
-        marks: "40/42"
+        marks: 40/42
       },
       {
         who: 'Abhijeet',
         roll: '20120624',
-        marks: "54/55"
+        marks: 54/55
       },
     ];
+
+
+
+    for(var i=0;i<$scope.participants.length;i++){
+      $scope.participants[i].percentages = ($scope.participants[i].marks)*100
+    }
+
+    // $scope.percent = function(marks, percentages){
+    //   percentages = ($scope.participants.marks)*100;
+    //
+    // };
 
 
 

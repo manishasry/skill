@@ -1,13 +1,13 @@
 <md-content>
     <md-list>
       <md-subheader class="md-no-sticky"><h1>Rankings</h1></md-subheader>
-      <md-list-item class="md-3-line" ng-repeat="item in participants">
+      <md-list-item class="md-3-line" ng-repeat="item in participants" >
         <div class="md-list-item-text" layout="column">
           <md-card>
-          <h>Student: {{ item.who }}<h> <br>
-          <h>Roll No.: {{ item.roll }}<h> <br>
-          <h>Marks: {{ item.marks }}<h> <br>
-          <h>Percentage: <h>
+          <p>Student: {{ item.who }}</p> <br>
+          <p>Roll No.: {{ item.roll }}</p> <br>
+          <p>Marks: {{ item.marks }}</p> <br>
+          <p>Percentage: {{item.percentages}}</p>
          </md-card>
         </div>
       </md-list-item>

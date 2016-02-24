@@ -47,14 +47,14 @@ angular.module('bhendi')
                               ];
 
             $scope.change = function (num,givenans){
-              if(givenans==$scope.questions[num].options[$scope.questions[num].answer])
+              if(givenans === $scope.questions[num].options[$scope.questions[num].answer])
               {
-                $scope.questions[num].correctAns=true
+                $scope.questions[num].correctAns=true;
               }
               else {
-                 $scope.questions[num].correctAns=false
+                 $scope.questions[num].correctAns=false;
               }
-              $scope.questions[num].attempted=true
+              $scope.questions[num].attempted=true;
           };
 
 
